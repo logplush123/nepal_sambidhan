@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>संविधान, राजनीतिक अवस्था, स्थानीय सरकार र सुशासन</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-landmark"></i>
+                    <h1>नेपालको संविधान र शासन</h1>
+                </div>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h3><i class="fas fa-book-open"></i> विषयसूची</h3>
+            <button class="close-sidebar" id="closeSidebar">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul class="sidebar-menu">
+            <li><a href="#" data-unit="unit1" class="active"><i class="fas fa-home"></i> परिचय</a></li>
+            <li><a href="#" data-unit="unit2"><i class="fas fa-gavel"></i> संविधानको अवधारणा</a></li>
+            <li><a href="#" data-unit="unit3"><i class="fas fa-file-contract"></i> नेपालको संविधान</a></li>
+            <li><a href="#" data-unit="unit4"><i class="fas fa-balance-scale"></i> संविधानका विशेषताहरू</a></li>
+            <li><a href="#" data-unit="unit5"><i class="fas fa-chart-pie"></i> राज्य संरचना</a></li>
+            <li><a href="#" data-unit="unit6"><i class="fas fa-city"></i> स्थानीय सरकार</a></li>
+            <li><a href="#" data-unit="unit7"><i class="fas fa-user-check"></i> सुशासन</a></li>
+            <li><a href="#" data-unit="unit8"><i class="fas fa-info-circle"></i> अतिरिक्त जानकारी</a></li>
+        </ul>
+        <div class="sidebar-footer">
+            <p>अद्यावधिक: वि.सं. २०८२</p>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="container">
+        <div class="content-header">
+            <h2 id="unitTitle">परिचय</h2>
+            <div class="progress-indicator">
+                <span id="progressText">इकाई १/८</span>
+                <div class="progress-bar">
+                    <div class="progress" id="progressBar"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-body" id="contentBody">
+            <!-- Content will be loaded dynamically from units.js -->
+        </div>
+
+        <div class="content-footer">
+            <div class="nav-buttons">
+                <button id="prevBtn" class="nav-btn" disabled>
+                    <i class="fas fa-chevron-left"></i> अघिल्लो
+                </button>
+                <button id="nextBtn" class="nav-btn">
+                    अर्को <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            <div class="quick-actions">
+                <button id="bookmarkBtn" class="action-btn">
+                    <i class="far fa-bookmark"></i> बुकमार्क
+                </button>
+                <button id="printBtn" class="action-btn">
+                    <i class="fas fa-print"></i> प्रिन्ट
+                </button>
+                <button id="searchToggle" class="action-btn">
+                    <i class="fas fa-search"></i> खोजी
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Search Modal -->
+    <div class="search-modal" id="searchModal">
+        <div class="search-container">
+            <div class="search-header">
+                <h3><i class="fas fa-search"></i> खोजी गर्नुहोस्</h3>
+                <button class="close-search" id="closeSearch">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="search-input">
+                <input type="text" id="searchInput" placeholder="शब्द वा वाक्यांश टाइप गर्नुहोस्...">
+                <button id="searchButton"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="search-results" id="searchResults">
+                <!-- Search results will appear here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+    <script src="units.js"></script>
+</body>
+</html>

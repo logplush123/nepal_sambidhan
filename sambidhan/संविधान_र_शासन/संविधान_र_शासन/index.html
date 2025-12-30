@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>संविधान र शासन: नेपालको विधि र व्यवस्था</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- शीर्ष अनुप्रयोग बार -->
+    <header class="app-header">
+        <div class="header-container">
+            <button class="menu-toggle" id="menuToggle" aria-label="मेनु खोल्नुहोस्">
+                <i class="fas fa-bars"></i>
+            </button>
+            <h1 class="app-title"><i class="fas fa-book-open"></i> संविधान र शासन</h1>
+            <button class="theme-toggle" id="themeToggle" aria-label="थिम परिवर्तन गर्नुहोस्">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- मुख्य सामग्री क्षेत्र -->
+    <main class="app-container">
+        <!-- पार्श्व नेविगेशन (पुस्तकको विषयसूची) -->
+        <nav class="sidebar-nav" id="sidebarNav">
+            <div class="sidebar-header">
+                <h2><i class="fas fa-list-ul"></i> विषयसूची</h2>
+                <button class="close-sidebar" id="closeSidebar" aria-label="मेनु बन्द गर्नुहोस्">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <ul class="toc-list" id="tableOfContents">
+                <!-- जावास्क्रिप्ट द्वारा स्वतः भरिने -->
+            </ul>
+            <div class="bookmark-info">
+                <p><i class="fas fa-info-circle"></i> कुनै पनि शीर्षकमा क्लिक गरेर सीधा त्यहाँ पुग्नुहोस्।</p>
+            </div>
+        </nav>
+
+        <!-- पुस्तक सामग्री क्षेत्र -->
+        <div class="content-area" id="contentArea">
+            <!-- अध्यायहरू यहाँ जावास्क्रिप्ट द्वारा सम्मिलित हुनेछन् -->
+        </div>
+
+        <!-- पृष्ठ नेविगेशन -->
+        <div class="page-nav">
+            <button class="nav-btn" id="prevBtn" disabled>
+                <i class="fas fa-chevron-left"></i> अघिल्लो
+            </button>
+            <span class="page-indicator" id="pageIndicator">१/१</span>
+            <button class="nav-btn" id="nextBtn">
+                अर्को <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </main>
+
+    <!-- तथ्य जाँच सूचना -->
+    <footer class="app-footer">
+        <div class="footer-container">
+            <p><i class="fas fa-check-circle"></i> <strong>तथ्य जाँच गरिएको:</strong> यस अनुप्रयोगमा उल्लेखित सम्पूर्ण तथ्यहरू वि.सं. २०८१ साउन सम्मका आधिकारिक स्रोतहरूबाट सत्यापित गरिएको छ। समयसँगै परिवर्तन हुनसक्छ।</p>
+            <p class="copyright">© Log Plus</p>
+        </div>
+    </footer>
+
+    <!-- स्क्रिप्टहरू -->
+     <!-- <script type="module" src="app.js"></script> -->
+    <!-- <script src="units.js"></script> -->
+    <script src="app.js"></script>
+</body>
+</html>

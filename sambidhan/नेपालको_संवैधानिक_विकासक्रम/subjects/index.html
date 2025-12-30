@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>नेपालको संविधान - अध्ययन सामग्री</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo-section">
+                <div class="logo-icon">
+                    <i class="fas fa-book-open"></i>
+                </div>
+                <div class="logo-text">
+                    <h1>नेपालको संवैधानिक अध्ययन</h1>
+                    <p class="subtitle">नेपालको संविधान र संवैधानिक विकासक्रम</p>
+                </div>
+            </div>
+            <div class="header-info">
+                <div class="study-mode">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>अध्ययन मोड</span>
+                </div>
+                <div class="progress-indicator">
+                    <span id="current-unit">१</span> / <span id="total-units">७</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="content-wrapper">
+                <!-- Navigation Buttons -->
+                <button class="nav-btn prev-btn" id="prevBtn" aria-label="अघिल्लो पाठ">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+
+                <!-- Content Area -->
+                <div class="content-area" id="contentArea">
+                    <div class="unit-content" id="unitContent">
+                        <!-- Content will be loaded dynamically from units.js -->
+                    </div>
+                    
+                    <!-- Progress Dots -->
+                    <div class="progress-dots" id="progressDots">
+                        <!-- Dots will be generated dynamically -->
+                    </div>
+                </div>
+
+                <!-- Navigation Buttons -->
+                <button class="nav-btn next-btn" id="nextBtn" aria-label="अर्को पाठ">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-landmark"></i> संवैधानिक अध्ययन सामग्री</h3>
+                    <p>नेपालको संवैधानिक विकासक्रमको व्यवस्थित अध्ययन सामग्री</p>
+                </div>
+                <div class="footer-section">
+                    <h3><i class="fas fa-info-circle"></i> जानकारी</h3>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> १००% भाषिक शुद्धता</li>
+                        <li><i class="fas fa-file-alt"></i> ७ पाठ युनिटहरू</li>
+                        <li><i class="fas fa-history"></i> संवैधानिक इतिहास</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3><i class="fas fa-book-reader"></i> अध्ययन सुझाव</h3>
+                    <p>प्रत्येक युनिट पूरा गरेपछि अर्को युनिटमा जानुहोस्। नियमित रूपमा पुनरावलोकन गर्नुहोस्।</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© Log Plus | शैक्षिक प्रयोजनको लागि मात्र</p>
+                <div class="navigation-hint">
+                    <i class="fas fa-mouse-pointer"></i>
+                    <span>बायाँ/दायाँ तीरबटन वा डटहरू प्रयोग गरी नेभिगेट गर्नुहोस्</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="units.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>राजनीतिक दल र संक्रमणकालिन व्यवस्था</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #e74c3c;
+            --bg-color: #f4f7f6;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            background-color: var(--bg-color);
+            color: var(--primary-color);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: var(--accent-color);
+            text-align: center;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            background: #ecf0f1;
+            padding: 10px 15px;
+            border-left: 5px solid var(--accent-color);
+            margin-top: 30px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            background: #fff;
+            margin-bottom: 10px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            transition: transform 0.2s;
+        }
+
+        li:hover {
+            transform: scale(1.02);
+            border-color: var(--accent-color);
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #c0392b;
+        }
+
+        .btn-toggle {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn-toggle:hover {
+            background: #34495e;
+        }
+
+        #extra-info {
+            display: none;
+            padding: 15px;
+            background: #fff3cd;
+            border: 1px solid #ffeeba;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>राजनीतिक दल र संक्रमणकालीन व्यवस्था</h1>
+
+    <section>
+        <h2>१. राजनीतिक दलको दर्ता</h2>
+        <p>निर्वाचन प्रयोजनका लागि निर्वाचन आयोगबाट मान्यता प्राप्त गर्न चाहने प्रत्येक राजनीतिक दलले कानुनद्वारा निर्धारित कार्यविधि पूरा गरी निर्वाचन आयोगमा दर्ता हुनुपर्छ। दर्ताका लागि निवेदन दिँदा राजनीतिक दलले देहायका शर्तहरू पूरा गरेको हुनुपर्नेछ:</p>
+        
+        <ul>
+            <li><strong>(क)</strong> राजनीतिक दलको विधान र नियमावली लोकतान्त्रिक हुनुपर्ने।</li>
+            <li><strong>(二)</strong> विधानमा कम्तीमा <span class="highlight">पाँच वर्षमा एक पटक</span> संघीय र प्रदेश तहका पदाधिकारीहरूको निर्वाचन हुने व्यवस्था हुनुपर्ने।</li>
+            <li><strong>(ग)</strong> दलका विभिन्न तहका कार्यकारिणी समितिमा नेपालको विविधता झल्कने गरी <span class="highlight">समावेशी प्रतिनिधित्व</span> सुनिश्चित गरिएको हुनुपर्ने।</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>२. बाधा अड्काउ फुकाउने अधिकार</h2>
+        <p>नेपालको संविधान बमोजिम संघीय संसद्को निर्वाचन भई त्यसको पहिलो अधिवेशन प्रारम्भ नभएसम्म संविधान कार्यान्वयनमा कुनै बाधा परेमा <strong>राष्ट्रपतिले</strong> मन्त्रिपरिषद्को सिफारिसमा आवश्यक आदेश जारी गर्न सक्नेछन्।</p>
+        
+        <button class="btn-toggle" onclick="toggleInfo()">थप जानकारी हेर्नुहोस्</button>
+        
+        <div id="extra-info">
+            संविधानको <strong>धारा ३०५</strong> बमोजिम यस्तो आदेशलाई तत्काल बसेको व्यवस्थापिका-संसद् वा संघीय संसद् समक्ष अनुमोदनका लागि पेश गर्नुपर्ने प्रावधान छ। यसै अन्तर्गत वि.सं. २०७३।०४।१० मा बाधा अड्काउ फुकाउको आदेश जारी भएको थियो।
+        </div>
+    </section>
+</div>
+
+<script>
+    function toggleInfo() {
+        var info = document.getElementById("extra-info");
+        if (info.style.display === "none" || info.style.display === "") {
+            info.style.display = "block";
+        } else {
+            info.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

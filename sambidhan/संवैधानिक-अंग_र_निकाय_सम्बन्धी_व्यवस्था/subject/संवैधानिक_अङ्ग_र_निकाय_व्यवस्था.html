@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>नेपालको संविधान: संवैधानिक अङ्ग र निकाय</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="header-content">
+                <h1><i class="fas fa-book-open"></i> संवैधानिक अङ्गहरू</h1>
+                <p class="subtitle">नेपालको संविधान अनुसारको व्यवस्था</p>
+            </div>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </header>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Sidebar Navigation -->
+            <nav class="sidebar" id="sidebar">
+                <div class="sidebar-header">
+                    <h3><i class="fas fa-list"></i> विषयसूची</h3>
+                    <button class="close-sidebar" id="closeSidebar">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <ul class="chapter-list" id="chapterList">
+                    <!-- Chapters will be populated by JavaScript -->
+                </ul>
+                <div class="book-info">
+                    <div class="info-card">
+                        <h4><i class="fas fa-info-circle"></i> जानकारी</h4>
+                        <p>यो एप्लिकेसन नेपालको संविधान, २०७२ अनुसारको संवैधानिक निकायहरूको व्यवस्था प्रस्तुत गर्दछ।</p>
+                        
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Book Content -->
+            <div class="book-container">
+                <div class="book-cover">
+                    <div class="cover-content">
+                        <h1>नेपालको संविधान</h1>
+                        <h2>संवैधानिक अङ्ग र निकायहरू</h2>
+                        <div class="divider"></div>
+                        <p class="cover-description">संवैधानिक व्यवस्था, अधिकार र कर्तव्यहरूको संकलन</p>
+                        <div class="start-reading">
+                            <button id="startReadingBtn"><i class="fas fa-play"></i> पढ्न सुरु गर्नुहोस्</button>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="book-content" id="bookContent">
+                    <!-- Content will be populated by JavaScript -->
+                </div>
+
+                <!-- Navigation Controls -->
+                <div class="book-navigation">
+                    <button id="prevChapter" class="nav-btn">
+                        <i class="fas fa-chevron-left"></i> अघिल्लो
+                    </button>
+                    <div class="chapter-indicator" id="chapterIndicator">
+                        अध्याय १ / १३
+                    </div>
+                    <button id="nextChapter" class="nav-btn">
+                        पछिल्लो <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+
+                <!-- Quick Facts -->
+                <div class="quick-facts">
+                    <h3><i class="fas fa-lightbulb"></i> महत्वपूर्ण तथ्यहरू</h3>
+                    <div class="facts-grid">
+                        <div class="fact-card">
+                            <div class="fact-icon"><i class="fas fa-balance-scale"></i></div>
+                            <p>नेपालको संविधानमा १३ वटा संवैधानिक निकायहरू व्यवस्थित छन्</p>
+                        </div>
+                        <div class="fact-card">
+                            <div class="fact-icon"><i class="fas fa-users"></i></div>
+                            <p>सबै संवैधानिक निकायहरूको नियुक्ति संवैधानिक परिषद्को सिफारिसमा हुन्छ</p>
+                        </div>
+                        <div class="fact-card">
+                            <div class="fact-icon"><i class="fas fa-shield-alt"></i></div>
+                            <p>संवैधानिक निकायहरू स्वतन्त्र र तटस्थ रूपमा कार्य गर्दछन्</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="app-footer">
+            <div class="footer-content">
+                <p>© Log Plus नेपालको संविधान: शैक्षिक सामग्री</p>
+                <p class="footer-note">यो एप्लिकेसन शैक्षिक उद्देश्यका लागि तयार गरिएको हो। आधिकारिक जानकारीको लागि सरकारी स्रोतहरू सन्दर्भ गर्नुहोस्।</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="units.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
